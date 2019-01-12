@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script type='text/javascript' src='https://cdn.scaledrone.com/scaledrone.min.js'></script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <style>
+    body {
+      display: flex;
+      height: 100vh;
+      margin: 0;
+      align-items: center;
+      justify-content: center;
+      padding: 0 50px;
+      /*font-family: -apple-system, BlinkMacSystemFont, sans-serif;*/
+      font-family: 'Maven Pro'
+    }
+    video {
+      max-width: calc(50% - 100px);
+      margin: 0 50px;
+      box-sizing: border-box;
+      border-radius: 2px;
+      padding: 0;
+      box-shadow: rgba(156, 172, 172, 0.2) 0px 2px 2px, rgba(156, 172, 172, 0.2) 0px 4px 4px, rgba(156, 172, 172, 0.2) 0px 8px 8px, rgba(156, 172, 172, 0.2) 0px 16px 16px, rgba(156, 172, 172, 0.2) 0px 32px 32px, rgba(156, 172, 172, 0.2) 0px 64px 64px;
+    }
+    .copy {
+      position: fixed;
+      top: 10px;
+      left: 50%;
+      transform: translateX(-50%);
+      font-size: 16px;
+      color: rgba(0, 0, 0, 0.5);
+    }
+    .title {
+        position: absolute;
+        top: 10px;
+        font-size: 15px;
+        color: #F98B88;
+    }
+    .sub-line {
+        position: absolute;
+        top: 60px;
+        left: 36%;
+        color: black;
+        /*font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif*/
+        font-family: 'Maven Pro';
+        font-size: 14px;
+        color: #F98B88;
+    }
+    .footer {
+        position: absolute;
+        bottom: 20px;
+        left: 36%;
+        color: #F98B88;
+    }
+  </style>
+</head>
+<body>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Maven+Pro" />
+    <div class="title">
+        <h1><i class="material-icons">blur_on</i> WatermelonBlock Investor Interaction Hub <i class="material-icons">blur_on</i></h1>
+    </div><br><br><br><br>
+    <div class="sub-line">
+        <h3>Supporting You With 24x7 Post-Sale Support As Promised!</h3>
+    </div>
+    <br><br>
+    <!--<div class="copy">Send your URL to a friend to start a video call</div>-->
+    <video id="localVideo" autoplay muted></video>
+    <video id="remoteVideo" autoplay></video>
+    <script src="script.js"></script>
+    <br>
+    <div class="footer">
+        <h4>Made with <i class="material-icons">favorite</i> by KR @ WatermelonBlock Engineering Team </h4>
+    </div>
+</body>
+</html>
